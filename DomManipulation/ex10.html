@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DExample 10</title>
+</head>
+
+<body>
+    <div class="colors">
+        <h1 id="color">h1 tag</h1>
+    </div>
+
+    <script>
+        const colorh1 = document.getElementById('color');
+        const colorParent = colorh1.parentNode;
+        const newP = document.createElement('p');
+        newP.setAttribute('id', 'color');
+        newP.textContent = 'New Replacement Text';
+        colorParent.replaceChild(newP, colorh1);
+    </script>
+</body>
+
+</html>
